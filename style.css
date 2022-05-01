@@ -10,13 +10,10 @@ body {
 p {
     font-size: 14px;
 }
-.header {
-    height: 141px;
-    
-}
+
 .header_top {
 
-    padding: 15px 0;
+    padding: 10px 10px;
     border-bottom: 1px solid #E8ECF1;
 }
 .header_top_container {
@@ -58,15 +55,15 @@ p {
 .menu_nav {
     display: flex;
     justify-content: space-between;
-    
+    height: 61px;
+    align-items: center;
     
 }
 .nav_list {
-    padding-right: 44px;
-    padding-top: 20px;
+    
     width: auto;
     text-decoration: none;
-    text-align: center;
+    
     font-size: 14px;
     font-weight: 500;
     color: #26211E;
@@ -81,24 +78,20 @@ p {
 }
 
 
-.banner {
-    margin-top: 20px;
+.banner { 
     height: 610px;
-    background: url(./img/banner.jpg) no-repeat;
+    background: url(./img/banner.jpg) no-repeat center;
 }
 .img_btn {
-    text-decoration: none;
-    display: flex;
+    
     color: #ffffff;
     font-size: 36px;
     margin-bottom: 50px;
     padding-top: 171px;
-    margin-left: 373px;
-    transition: .3s ease;
+    
+    
 }
-.img_btn:hover {
-    color: #0195DD;
-}
+
 .banner_btn {
     text-decoration: none;
     display: block;
@@ -108,7 +101,7 @@ p {
     color: #0195DD;
     background-color: #ffffff;
     padding: 15px 30px;
-    margin-left: 373px;
+    
     transition: .3s ease;
 }
 .banner_btn:hover {
@@ -116,11 +109,13 @@ p {
     color: #ffffff;
 }
 .news   {
-    height: 752px;
-    width: 1546px;
-    margin-top: 162px;
+    
+    padding-top: 162px;
     background: url(./img/news_cover.jpg) center;
 
+}
+.box_news {
+    margin-bottom: 51px;
 }
 .news__nav {
     display: flex;
@@ -131,14 +126,27 @@ p {
     text-decoration: none;
     text-align: center;
     font-size: 14px;
+    
 }
 h2 {
     margin-bottom: 30px;
+    font-weight: 700;
+}
+.news_date {
+    color: #0195DD;
+    font-size: 14px;
+    margin: 0;
+
 }
 .blog_border {
     background: #fff;
     height: 632px;
     padding-left: 36px;
+    
+}
+h3 {
+    font-weight: 700;
+    padding-top: 30px;
 }
 .blog_bot {
     display: flex;
@@ -154,6 +162,7 @@ h2 {
     font-size: 14px;
     color: #0195DD;
     background-color: #ffffff;
+    box-shadow: 0 4px 20px #3E3B3B26;
     padding: 15px 30px;
     margin-top: 35px;
     margin-bottom: 28px;
@@ -167,23 +176,32 @@ h2 {
     display: block;
     text-align: center;
     font-size: 14px;
-    padding-top: 50px;
+    font-weight: 700;
     margin-right: 28px;
 }
 
 .partners {
-    margin-top: 90px;
-    height: 457px;
+    padding-top: 90px;
+    
+    
     
 }
 .partners_logo {
-    height: 168px;
-    margin-top: 30px;
+    
+    padding-top: 85px;
     
 }
 .footer {
-    margin-top: 90px;
-    height: 80px;
+    margin-top: 80px;
+    
     background: #13161E;
     color: #fff;
+}
+.menu_nav_foot {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
 }
