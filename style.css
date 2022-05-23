@@ -82,6 +82,8 @@ p {
 .menu_nav {
     
     padding: 20px 0;
+    position: relative;
+    display: block;
     
 }
 .menu_nav_btn {
@@ -100,6 +102,8 @@ p {
     padding: 0.375rem 0.75rem;
     font-size: 1rem;
     border-radius: 0.25rem;
+    z-index:100;
+    position: relative;
     transition: .15s ease;
 }
 .menu_nav_btn:hover {
@@ -111,9 +115,26 @@ p {
     
     display: flex;
     justify-content: space-between;
-    
-    
+
 }
+.menu_list__toggle {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.menu_list__toggle.open {
+    display: block;
+}
+.menu_list__toggle a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
 
 .nav_list {
     

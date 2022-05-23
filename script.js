@@ -24,6 +24,16 @@ $(document).ready(function(){
     });
 
 
+
+    let menu_nav_btn = document.querySelector('.menu_nav_btn');
+    let menu_list__toggle = document.querySelector('.menu_list__toggle');
+
+      menu_nav_btn.addEventListener('click', function(){
+      menu_nav_btn.classList.toggle('open');
+      menu_list__toggle.classList.toggle('open');
+})
+
+
     var exampleModal = document.getElementById('exampleModal')
     exampleModal.addEventListener('show.bs.modal', function (event) {
       // Button that triggered the modal
