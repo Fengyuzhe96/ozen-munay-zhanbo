@@ -21,17 +21,17 @@ $(document).ready(function(){
 
 
     document.getElementsByClassName("menu_toggle")[0].addEventListener("click", function() {
-    document.getElementsByClassName("menu_nav_btn")[0].classList.toggle("open");
+    document.getElementsByClassName("menu-nav__btn")[0].classList.toggle("open");
     });
 
 
 
-    let menu_nav_btn = document.querySelector('.menu_nav_btn');
-    let menu_list__toggle = document.querySelector('.menu_list__toggle');
+    let menu_nav = document.querySelector('.menu-nav__btn');
+    let menu_toggle = document.querySelector('.menu-nav__list_toggle');
 
-      menu_nav_btn.addEventListener('click', function(){
-      menu_nav_btn.classList.toggle('open');
-      menu_list__toggle.classList.toggle('open');
+      menu_nav.addEventListener('click', function(){
+      menu_nav.classList.toggle('open');
+      menu_toggle.classList.toggle('open');
 })
 
 
