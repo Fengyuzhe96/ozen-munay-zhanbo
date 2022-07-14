@@ -1,0 +1,15 @@
+version: '3.5'
+services:
+  nginx:
+    build:
+      context: docker/nginx
+    ports:
+      - 80:80
+    volumes:
+      - ./src:/code
+  fpm:
+    image: php:8.1-fpm
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
+    volumes:
+      - ./src:/code
